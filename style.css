@@ -1,0 +1,21 @@
+p {
+    margin: 20px;
+    padding: 10px;
+    text-indent: 30px;
+    font-size: 14px;
+    font-family: DM Sans;
+}
+
+h1{
+    font-size: 24px;
+    font-family: EB Garamond;
+}
+
+h3{
+    font-size: 18px;
+    font-family: EB Garamond;
+}
+
+body{
+    background-color: bisque
+}
