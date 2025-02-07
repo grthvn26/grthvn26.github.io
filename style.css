@@ -1,14 +1,21 @@
 p {
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
     text-indent: 30px;
-    font-size: 14px;
-    font-family: DM Sans;
+    font-size: 16px;
+    font-family: DM Sans, sans-serif;
+    line-height: 1.6;
+    background-color: beige;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1{
-    font-size: 24px;
-    font-family: EB Garamond;
+h1 {
+    font-size: 36px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    margin-top: 20px;
 }
 
 h3{
