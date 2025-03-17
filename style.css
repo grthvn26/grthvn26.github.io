@@ -1,28 +1,367 @@
-p {
-    margin: 20px auto;
-    padding: 10px;
-    text-indent: 30px;
-    font-size: 16px;
+body {
     font-family: DM Sans, sans-serif;
-    line-height: 1.6;
-    background-color: beige;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    background-color: #f8ecdb;
 }
 
-h1 {
-    font-size: 36px;
-    font-family: 'EB Garamond', serif;
+header {
+    background-color: #6c4e31;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #6c4e31;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    text-decoration: none;
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    margin: 0 15px;
+    color: #e7dac8;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: #e7dac8;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.introduction, .biography, .resume, .skills, .contacts {
+    padding: 40px 20px;
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 40px 30px;
+}
+
+.text-content {
+    max-width: 50%; 
+}
+
+
+h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+h3 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+.image-content {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+.styled-image {
+    width: auto; 
+    height: 100%; 
+    max-width: 400px; 
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.biography, .skills {
+    background-color: #fff9eb;
+}
+
+
+
+.biography h2, .resume h2, .skills h2, .contacts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.bio-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box {
+    background-color: #f8ecdb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.childhood-years {
+    background-color: #f8ecdb;
+}
+
+.teenage-years {
+    background-color: #fff9eb;
+}
+
+.college-years {
+    background-color: #f8ecdb;
+}
+
+.resume .about-me,
+.resume .technical-skills,
+.resume .work-experiences,
+.resume .educational-attainment,
+.resume .skills-training-seminars,
+.resume .hobbies-interests {
+    margin-bottom: 20px;
+}
+
+.resume h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resume ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume ul li {
+    margin-bottom: 5px;
+}
+
+.resume .box {
+    background-color: #f8ecdb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.resume h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resume ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.resume ol li {
+    margin-bottom: 5px;
+}
+
+.resume-photo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floating-btn {
+    background-color: transparent;
+    background-color: #6c4e31; 
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    right: 20px; 
+}
+
+.floating-btn:hover {
+    background-color: #9b6e51; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+#goTopBtn {
+    bottom: 150px; 
+}
+
+
+.video-welcome {
+    padding: 20px 10px; 
+    background-color: #fff9eb;
+    margin-bottom: 20px; 
+}
+
+.video-box {
+    background-color: #f8ecdb;
+    padding: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-element {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     margin-top: 20px;
 }
 
-h3{
-    font-size: 18px;
-    font-family: EB Garamond;
+.gallery a {
+    display: inline-block;
 }
 
-body{
-    background-color: bisque
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.landing-page {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fff9eb;
+}
+
+.landing-page h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.landing-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.gallery-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6c4e31;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-button:hover {
+    background-color: #5a3e27;
+}
+
+.photo-gallery {
+    padding: 40px 20px;
+    background-color: #fff9eb;
+    margin-bottom: 40px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.photo-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo-gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+}
+
+.photo-gallery-item a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery-item a:hover {
+    transform: scale(1.05);
+}
+
+.photo-gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-gallery-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .photo-gallery-grid {
+        gap: 10px;
+    }
+
+    .photo-gallery-item {
+        width: 120px;
+    }
+
+    .photo-gallery-item p {
+        font-size: 12px;
+    }
 }
