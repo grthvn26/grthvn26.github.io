@@ -364,4 +364,104 @@ section {
     .photo-gallery-item p {
         font-size: 12px;
     }
+
+    .audio-item, .video-item {
+        width: 120px;
+    }
+
+    .audio-item img, .video-item img {
+        width: 100%;
+    }
+}
+
+
+.media-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.media-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6c4e31;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.media-button:hover {
+    background-color: #5a3e27;
+}
+
+.my-beat, .my-kind-of-film {
+    padding: 40px 20px;
+    background-color: #fff9eb;
+    margin-bottom: 40px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.audio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* Increased width */
+    text-align: center;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.audio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Increased width */
+    text-align: center;
+}
+
+.audio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+audio, video {
+    width: 100%;
+    border-radius: 10px;
 }
