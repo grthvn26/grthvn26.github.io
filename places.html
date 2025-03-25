@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-    <title>Contacts - Aaron's Portfolio</title>
+    <title>Dream Places - Aaron's Porfolio</title>
 </head>
 <body>
     <header>
@@ -27,20 +27,23 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section id="contacts" class="contacts">
-            <h2>Contacts</h2>
-            <p>
-                If you want to contact me, you can reach me through my email: arevalo.aaroncarl@ue.edu.ph
-            </p>
+        <section id="places" class="places">
+            <h2 style="text-align: center; margin-top: 20px">Dream Places to Visit</h2>
+            <div class="image-map-container">
+                <img src="img/places-images.png" alt="Dream Places" usemap="#world-map">
+                <map name="world-map">
+                    <area shape="rect" coords="70,53,688,293" alt="South Korea" href="sk.html" title="Seoul, South Korea" target="_display">
+                    <area shape="rect" coords="70,333,388,648" alt="Japan" href="japan.html" title="Osaka, Japan" target="_display">
+                    <area shape="poly" coords="598,337,472,397,441,527,526,641,668,641,753,533,725,533" alt="Germany" href="ger.html" title="Berlin, Germany" target="_display">
+                    <area shape="circle" coords="1030,360,225" alt="Malaysia" href="malay.html" title="Kuala Lumpur, Malaysia" target="_display">
+                </map>
+            </div>
         </section>
-        
-        <a href="index.html" id="homeBtn" class="floating-btn">Home</a>
-        <a href="#top" id="goTopBtn" class="floating-btn">Go to Top</a>
-    
     </main>
-    
+
+    <a href="index.html" id="homeBtn" class="floating-btn">Home</a>
     <footer>
         <p>&copy; 2025 Aaron Carl Arevalo, University of the East. All rights reserved.</p>
     </footer>
