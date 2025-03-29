@@ -562,6 +562,16 @@ audio {
     background-color: #8a6345;
 }
 
+.contacts {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff9eb;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .bucket-list {
     text-align: center;
     padding: 20px;
@@ -610,16 +620,6 @@ audio {
 .bucket-item p {
     font-size: 14px;
     color: #333;
-}
-
-.contacts {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff9eb;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
@@ -680,3 +680,4 @@ audio {
 .social-link:hover {
     color: #8a6345;
 }
+
